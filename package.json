@@ -1,0 +1,15 @@
+{
+  "name": "invisible-friend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jordi <jcerdan@tecob.com>",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^2.6.4",
+    "shuffle-array": "^1.0.0"
+  }
+}
