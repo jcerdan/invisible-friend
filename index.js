@@ -27,7 +27,6 @@ newusers.forEach(function(newuser, index, newusers){
 var transporter = nodemailer.createTransport(config.mail);
 
 if (sendmail){
-	console.log("send mail")
 	users.forEach(function(user, index, users){
 		var mailOptions = {
 		  from: '"' + config.from.name + '" <' + config.from.mail +'>', 
@@ -36,14 +35,12 @@ if (sendmail){
 		  text: 'ESTO ES UNA PRUEBA. ' + user.name + ' te ha tocao ' + newusers[index].name,
 		  html: '<strong>ESTO ES UNA PRUEBA.</strong> ' + user.name + ' te ha tocao ' + newusers[index].name 
 		};
-		/*
 		transporter.sendMail(mailOptions, function(error, info){
 		  if(error){
 		    return console.log(error);
 		  }
 		  console.log('Message sent to ' + user.mail + ': ' + info.response);
 		})
-		*/
 	})
 }
 else{
